@@ -1,0 +1,50 @@
+@import "../styles/tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-mist font-body text-ink antialiased;
+  background-image:
+    radial-gradient(circle at top left, rgba(255, 217, 222, 0.7), transparent 28%),
+    radial-gradient(circle at top right, rgba(216, 236, 255, 0.7), transparent 30%),
+    linear-gradient(180deg, #fdfdfd 0%, #f8fafc 100%);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed;
+  background-color: #f8fafc;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db transparent;
+}
+
+.glass {
+  @apply border border-white/50 bg-white/70 backdrop-blur-xl;
+}
+
+.panel {
+  @apply glass rounded-3xl shadow-soft;
+}
+
+.animated-grid {
+  background-image:
+    linear-gradient(rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.node-card {
+  @apply rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-soft;
+}
