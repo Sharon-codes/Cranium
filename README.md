@@ -1,4 +1,4 @@
-# Cranium - Made by Khushi Mhamane
+# Cranium - Created by Khushi Mhamane
 
 Cranium is a production-ready Next.js + Supabase application that turns uploaded documents into AI-generated mind maps, then layers on summaries, explanations, flashcards, MCQs, and subjective evaluation.
 
